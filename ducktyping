@@ -1,0 +1,16 @@
+class pycharm:
+    def execute(self):
+        print("compiling")
+class MyEditor:
+    def execute(self):
+        print("spell")
+class Laptop:
+
+    def code(self,ide):
+        ide.execute()
+
+
+ide=pycharm()
+ide=MyEditor()
+lap1=Laptop()
+lap1.code(ide)

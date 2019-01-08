@@ -1,0 +1,14 @@
+def add(x,y):
+    c=x+y
+    print(c)
+
+#add(5,3)
+
+#dont want to print
+
+def add1(x,y):
+    c=x+y
+    return c
+result=add1(6,5)
+#print(result)
+

@@ -1,0 +1,19 @@
+from numpy import *
+
+arr1=array([
+
+    [1,2,3,8,9,1],
+    [5,6,7,45,32,90]
+
+])
+
+arr2=arr1.flatten()#2D to 1D
+print(arr1.size)
+print(arr2)
+
+arr3=arr2.reshape(3,4) #arr2 is 1D 3 rows 4 coloumns
+print(arr3)
+
+arr4=arr2.reshape(2,2,3) #  1Dto3D 2 2d array which has 2 rows and 3 coloumns
+
+print(arr4)

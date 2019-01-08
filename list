@@ -1,0 +1,9 @@
+a=[]
+n=int(input("enter the no of names in tthe list"))
+for i in range(n):
+    s= input("enter the elements")
+    a.append(s)
+for m in a:
+    if len(m) > 5 :
+        print(m)
+
