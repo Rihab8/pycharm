@@ -1,0 +1,27 @@
+pos=-1
+def search(a,n):
+  l=0
+  u=len(a)-1
+  while l<=u:
+      mid=u+l/2
+  if a[mid]==n:
+      return True
+      globals()['pos']=mid
+  elif a[mid]<n:
+      l=mid+1
+      mid=l+u/2
+  elif a[mid]>n:
+      u=mid-1
+      mid=u+l/2
+  return False
+a=[]
+n=int(input("enter the number of lelemmts"))
+for i in range(n):
+    p=int(input("enter the elements"))
+    a.append(p)
+print(a)
+n=int(input("enter the number to search"))
+if search(a,n):
+    print("found",pos)
+else:
+    print("not found")

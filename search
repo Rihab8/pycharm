@@ -1,0 +1,21 @@
+pos=-1
+def search(a,n):
+    i=0
+    for i in range(len(a)):
+        if a[i]==n:
+
+            globals()['pos']=i
+            return True
+
+    return False
+a=[]
+n=int(input("enter the number of lelemmts"))
+for i in range(n):
+    p=int(input("enter the elements"))
+    a.append(p)
+print(a)
+n=int(input("enter the number to search"))
+if search(a,n):
+    print("found",pos+1)
+else:
+    print("not found")

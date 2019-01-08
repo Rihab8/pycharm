@@ -1,0 +1,16 @@
+from numpy import *
+arr1=array([
+
+    [1,2,3,],
+    [5,6,7,]
+])
+#print(arr1)
+#or
+
+m1=matrix('1 2 3 ; 6 5 7;7 9 6 ')
+m2=matrix('4 5 6;8 5 3;1 4 5')
+print(m1)
+print(m2)
+print(m1.diagonal())
+print(m1*m2)
+

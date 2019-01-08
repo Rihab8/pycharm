@@ -1,0 +1,19 @@
+class Computer:
+    def config(self):
+        print("15,16gb,1TB")
+
+
+a='8'
+#print(type(a))
+
+com1=Computer()
+#Computer.config(com1)#we need to mention object
+
+#print(type(com1))
+#or
+#com1.config()#common
+
+
+
+
+

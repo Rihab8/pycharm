@@ -1,0 +1,17 @@
+from functools import reduce
+#lambda
+f=lambda a,b:a+b
+
+nums=[1,2,34,45,6,64]
+
+evens=list(filter(lambda n:n%2==0,nums))
+print(evens)
+
+doubles=list(map(lambda n:n*2,evens))
+print(doubles)
+
+sum = reduce(lambda a,b:a+b,doubles)
+print(sum)
+print(nums)
+print(evens)
+print(doubles)

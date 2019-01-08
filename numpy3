@@ -1,0 +1,27 @@
+from numpy import  *
+arr = array([1,2,3,4,5.0])
+print(arr.dtype)
+print(arr)
+
+rr=linspace(0,16,20)
+print(rr)
+
+rrr=linspace(0,16)
+print(rrr)
+
+aa=arange(10,30)
+print(aa)
+
+ar=logspace(1,40,5)
+print(ar)
+print('%.2f'%ar[3])
+
+qq=zeros(5)
+
+
+#copy arrays and mathematical operations
+arr1=array([1,2,3,4,5])
+print(sqrt(arr1)) #max,min,log
+
+print(concatenate([arr1,arr]))
+#arr1=arr2,arr1=arr2.copy(),arr1=arr2.view()

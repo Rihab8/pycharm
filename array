@@ -1,0 +1,23 @@
+from array import *
+vals=array('i',[])
+n=int(input("enter no of elements"))
+for j in range(n):
+    p = int(input("enter the  elements"))
+    vals.append(p)
+for i in range(n):
+    print(vals[i],end=" ")
+print()
+sea=int(input("enter the value to search"))
+for k in vals:
+    if k==sea:
+        flag=1
+        break;
+    else:
+        flag=0
+if flag==1:
+    print(vals.index(sea))
+else:
+    print("not found")
+
+
+
